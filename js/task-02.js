@@ -20,7 +20,7 @@ const elements = ingredients.map(el => {
 })
 
 
-
+  console.log(listEl);
 
 
 

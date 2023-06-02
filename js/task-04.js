@@ -5,20 +5,21 @@ const deskBtn = document.querySelector("[data-action='decrement']");
 const incrBtn = document.querySelector("[data-action='increment']");
 console.dir(counterValueEl);
 
-// counterValueEl.textContent = 0;
-deskBtn.addEventListener('click', OnIncrement)
 
-incrBtn.addEventListener('click', OnDecrement)
-  const step = 1;
+deskBtn.addEventListener('click', OnIncrement);
+
+incrBtn.addEventListener('click', OnDecrement);
+
+ let step = 0;
 
 function OnDecrement(params) {
-   console.log(step);
-     console.log('Клик+')
-    counterValueEl.textContent += step;
+  step += 1;
+   
+    counterValueEl.textContent = String(step);
 };
 
 function OnIncrement(params) {
- console.log(params);
-     console.log('Клик-')
-    counterValueEl.textContent -= step;
+ step -= 1;
+
+    counterValueEl.textContent =String(step);
 };
