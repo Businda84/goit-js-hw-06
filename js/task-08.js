@@ -11,7 +11,10 @@ function onSubmit(evt) {
     const data = {
         email: email.value,
         password: password.value,
+
     };
 
-console.log(data);
+    console.log(data);
+    
+    formEl.reset()
 }
