@@ -15,12 +15,12 @@ const elements = ingredients.map(el => {
   const listEl = document.createElement('li')
   listEl.classList.add('item');
   listEl.textContent = el;
-  console.log(listEl);
+  // console.log(listEl);
   return listEl
 })
 
-
-  console.log(listEl);
+ingredientsEl.append(...elements);
+ 
 
 
 

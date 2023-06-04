@@ -14,18 +14,13 @@ const images = [
 ];
 
 const listEl = document.querySelector('.gallery')
-
-
-
 const makeImg = images.map(
-  (image)=>`<li class="img__items"><img src="${image.url}" alt="${image.alt}" width="640" height="640"></li>`
+  (image)=>`<li class="img__items"><img src="${image.url}" alt="${image.alt}" width="340" height="340"></li>`
 )
   
 listEl.insertAdjacentHTML('afterbegin', makeImg);
 
-// listEl.requestPointerLock.add=   width= 100px,
-//   height= 100px,
-//   border-radius= 20%,
-//   background-color= #2196f3
 
-
+listEl.style.listStyle = 'none';
+listEl.style.display = 'flex';
+listEl.style.flexWrap = 'wrap';

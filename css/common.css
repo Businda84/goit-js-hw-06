@@ -23,14 +23,7 @@ button {
   cursor: pointer;
 }
 
-.img__items{
-list-style: none;
-}
-.gallery{
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-}
+
 img{
   object-fit: cover;
 }
